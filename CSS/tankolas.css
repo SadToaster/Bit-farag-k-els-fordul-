@@ -52,6 +52,10 @@ input[type="number"]:focus {
     outline: none;
 }
 
+input[type="date"] {
+    font-weight: bold;
+}
+
 button {
     display: block;
     width: 100%;
