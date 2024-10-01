@@ -6,8 +6,9 @@
     <title>Bemutatkozó</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="../Javascript/bemutatkozo.js"></script>
+    <link rel="stylesheet" href="../CSS/bemutatkozo.css">
 </head>
-<body>
+<body onload="startTime()">
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="./index.html" target="_blank">Főmenü</a>
@@ -21,6 +22,11 @@
             </li>
           </ul>
         </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <p class="navbar-brand" id="demo"></p>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
       </nav>
     </div>
     <div class="container">
@@ -76,7 +82,7 @@
             <img src="..//Images/nadler_balazs_tanarur.webp" class="card-img-top" alt="Csapattag: Pók Patrik ">
             <div class="card-body">
               <p class="card-text text-center">
-                Csapattag:<br>Pók Patrik <br> <button onclick="legordulobemutatkozo1()" id="myBtn1">Read more</button> <br><span id="more1">Szia Patrik vagyok!</span><span id="dots1"> </span>
+                Csapattag:<br>Pók Patrik <br> <button onclick="legordulobemutatkozo1()" id="myBtn1">Megtekint</button> <br><span id="more1">Szia Patrik vagyok!</span> <span id="dots1"> </span>
               </p>
             </div>
           </div>
@@ -85,7 +91,7 @@
           <div class="card mx-4 my-3" >
             <img src="..//Images/nadler_balazs_tanarur.webp" class="card-img-top" alt="Csapattag: Rasch Vincent Richárd ">
             <div class="card-body">
-              <p class="card-text text-center">Csapattag:<br>Rasch Vincent Richárd <br> <button onclick="legordulobemutatkozo2()" id="myBtn2">Read more</button> <br><span id="more2">Szia Patrik vagyok!</span><span id="dots2"> </span></p>
+              <p class="card-text text-center">Csapattag:<br>Rasch Vincent Richárd <br> <button onclick="legordulobemutatkozo2()" id="myBtn2">Megtekint</button> <br><span id="more2" >Szia Patrik vagyok!</span><span id="dots2">  </span></p>
             </div>
           </div>
         </div>
@@ -93,11 +99,14 @@
           <div class="card mx-4 my-3" >
             <img src="..//Images/nadler_balazs_tanarur.webp" class="card-img-top" alt="Csapattag: Tunner Máté ">
             <div class="card-body">
-              <p class="card-text text-center">Csapattag:<br>Tunner Máté <br> <button onclick="legordulobemutatkozo3()" id="myBtn3">Read more</button> <br><span id="more3">Szia Patrik vagyok!</span><span id="dots3"> </span></p>
+              <p class="card-text text-center">Csapattag:<br>Tunner Máté <br> <button onclick="legordulobemutatkozo3()" id="myBtn3">Megtekint</button> <br><span id="more3" >Szia Patrik vagyok!</span><span id="dots3">   </span></p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
+
+
 </body>
 </html>

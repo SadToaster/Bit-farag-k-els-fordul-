@@ -5,7 +5,7 @@ function legordulobemutatkozo1(){
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      btnText.innerHTML = "megtekint";
+      btnText.innerHTML = "Megtekint";
       moreText.style.display = "none";
     } else {
       dots.style.display = "none";
@@ -20,7 +20,7 @@ function legordulobemutatkozo2(){
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      btnText.innerHTML = "megtekint";
+      btnText.innerHTML = "Megtekint";
       moreText.style.display = "none";
     } else {
       dots.style.display = "none";
@@ -35,7 +35,7 @@ function legordulobemutatkozo3(){
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      btnText.innerHTML = "megtekint";
+      btnText.innerHTML = "Megtekint";
       moreText.style.display = "none";
     } else {
       dots.style.display = "none";
@@ -43,3 +43,11 @@ function legordulobemutatkozo3(){
       moreText.style.display = "inline";
     }
 }
+
+function startTime() {
+    const date = new Date();
+    document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+    setTimeout(function() {startTime()}, 1000);
+  }
+
+
