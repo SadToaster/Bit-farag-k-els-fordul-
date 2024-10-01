@@ -28,8 +28,11 @@
         <br>
         <button onclick='input()'>Adatok bevitele</button>
         
-        <p id="errorMessage" style="color: red;"></p> <!-- Error message container -->
+        <p id="errorMessage" style="color: red;"></p> 
+        <br>
+        <hr>
 
+    <div class="table-container">
         <table>
             <thead>
                 <tr>
@@ -43,6 +46,37 @@
             <tbody id="dataTable">
             </tbody>
         </table>
+    </div>
+
+    <br><br><br><br>
+
+    <!-- Date range inputs for filtering -->
+<div class="date-filter">
+    <label for="startDate">Válassza ki a kezdő dátumot:</label>
+    <input type="date" id="startDate">
+<br>
+    <label for="endDate">Válassza ki a befejező dátumot:</label>
+    <input type="date" id="endDate">
+    
+    <button onclick="filterByDate()">Szűrés dátum alapján</button>
+</div>
+
+<!-- New table to show filtered fueling statements -->
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Sorszám</th>
+                <th>Tankolt mennyiség</th>
+                <th>Fizetett összeg</th>
+                <th>Kilométer állás</th>
+                <th>Dátum</th>
+            </tr>
+        </thead>
+        <tbody id="filteredTable">
+        </tbody>
+    </table>
+</div>
     </div>
 </body>
 </html>
