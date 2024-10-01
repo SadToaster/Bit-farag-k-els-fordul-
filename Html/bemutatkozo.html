@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bemutatkozó</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="../Javascript/bemutatkozo.js"></script>
 </head>
 <body>
     <div>
@@ -22,27 +23,81 @@
         </div>
       </nav>
     </div>
-    <section class="container">
-      <section class="row">
-        <section style="width: 65%; height: 65%;" class="mx-auto">
-          <section class="card" >
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-9">
+          <div class="card mx-5 my-3" >
             <img src="../Images/kep_iskolarol.jpg" class="card-img-top" alt="VSZC Ipari Technikum">
-            <section class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </section>
-          </section>
-        </section>
-        <div style="width: 65%; height: 65%;" class="mx-auto">
-          <div class="card" >
-            <img src="../Images/dudas_erika_tanarno.webp" class="card-img-top" alt="Dudás Erika ">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
         </div>
-        
-      </section>
-      
-    </section>
+
+
+        <div class="container col-12 col-md-3 mx-auto">
+          <div class="row">
+            <div class=" col-12">
+              <div class="card mx-4 my-3" >
+                <img src="../Images/dudas_erika_tanarno.webp" class="card-img-top" alt="Dudás Erika ">
+                <div class="card-body">
+                  <p class="card-text text-center">Felkészítő tanár: <br>Dudás Erika</p>
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="col-12">
+              <div class="card mx-4 my-3" >
+                <img src="..//Images/nadler_balazs_tanarur.webp" class="card-img-top" alt="Nádler Balázs ">
+                <div class="card-body">
+                  <p class="card-text text-center">Felkészítő tanár: <br> Nádler Balázs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+    
+
+    <p class="text-center">
+      Csapattagok bemutatása:
+    </p>
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="card mx-4 my-3" >
+            <img src="..//Images/nadler_balazs_tanarur.webp" class="card-img-top" alt="Csapattag: Pók Patrik ">
+            <div class="card-body">
+              <p class="card-text text-center">
+                Csapattag:<br>Pók Patrik <br> <button onclick="legordulobemutatkozo1()" id="myBtn1">Read more</button> <br><span id="more1">Szia Patrik vagyok!</span><span id="dots1"> </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card mx-4 my-3" >
+            <img src="..//Images/nadler_balazs_tanarur.webp" class="card-img-top" alt="Csapattag: Rasch Vincent Richárd ">
+            <div class="card-body">
+              <p class="card-text text-center">Csapattag:<br>Rasch Vincent Richárd <br> <button onclick="legordulobemutatkozo2()" id="myBtn2">Read more</button> <br><span id="more2">Szia Patrik vagyok!</span><span id="dots2"> </span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card mx-4 my-3" >
+            <img src="..//Images/nadler_balazs_tanarur.webp" class="card-img-top" alt="Csapattag: Tunner Máté ">
+            <div class="card-body">
+              <p class="card-text text-center">Csapattag:<br>Tunner Máté <br> <button onclick="legordulobemutatkozo3()" id="myBtn3">Read more</button> <br><span id="more3">Szia Patrik vagyok!</span><span id="dots3"> </span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
