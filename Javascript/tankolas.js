@@ -1,27 +1,49 @@
-let number = 1;
+function input() {
+    // Get input values
+    let fuel = document.getElementById('fuelInput').value;
+    let money = document.getElementById('moneyInput').value;
+    let kilometers = document.getElementById('kilometresInput').value;
+    let date = document.getElementById('datumInput').value;
+    
+    // Get the error message container
+    let errorMessage = document.getElementById('errorMessage');
+    errorMessage.textContent = ""; // Clear previous error messages
 
-function input(){
-    var fuel = document.getElementById("fuelInput").value;
-    var money = document.getElementById("moneyInput").value;
-    var distance = document.getElementById("kilometresInput").value;
+    // Validate inputs
+    if (fuel === "" || money === "" || kilometers === "") {
+        errorMessage.textContent = "Kérlek, töltsd ki az összes mezőt számokkal!";
+        return; // Exit the function if validation fails
+    }
 
-    var table = document.getElementById("dataTable");
+    if (isNaN(fuel) || isNaN(money) || isNaN(kilometers)) {
+        errorMessage.textContent = "Kérlek, csak számokat adj meg!";
+        return; // Exit the function if validation fails
+    }
 
-    var row = table.insertRow(-1);
+    // Get current date
+    
 
-    var cell0 = row.insertCell(0)
-    var cell1 = row.insertCell(1);
-    var cell2 = row.insertCell(2);
-    var cell3 = row.insertCell(3);
+    // Create a new row
+    let table = document.getElementById('dataTable');
+    let row = table.insertRow(-1);
 
-    cell0.innerHTML = number + '.';
-    cell1.innerHTML = fuel;
-    cell2.innerHTML = money;
-    cell3.innerHTML = distance;
+    // Add cells to the row
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    let cell4 = row.insertCell(3);
+    let cell5 = row.insertCell(4);
 
+    // Fill the cells with data
+    cell1.innerHTML = table.rows.length;
+    cell2.innerHTML = fuel;
+    cell3.innerHTML = money;
+    cell4.innerHTML = kilometers;
+    cell5.innerHTML = date;
+
+    // Clear the inputs
     document.getElementById('fuelInput').value = '';
     document.getElementById('moneyInput').value = '';
     document.getElementById('kilometresInput').value = '';
-
-    number ++
+    document.getElementById('dateInput').value = ''
 }
