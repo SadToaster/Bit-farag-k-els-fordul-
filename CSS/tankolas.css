@@ -111,3 +111,9 @@ p {
     margin-top: 20px;
     float: left;
 }
+
+.table-container {
+    max-height: 200px; 
+    overflow-y: auto;
+    margin-top: 20px;
+}
