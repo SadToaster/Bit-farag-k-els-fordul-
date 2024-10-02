@@ -6,3 +6,4 @@ document.getElementById('tank').addEventListener('click', function() {
     window.open('./tankolas.html', '_blank');
 });
 
+

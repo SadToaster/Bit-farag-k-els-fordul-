@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding-top: 70px;
 }
 
 .container {
@@ -19,7 +20,7 @@ body {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
 }
 
@@ -32,7 +33,7 @@ h1.cim {
 label {
     float: left;
     display: block;
-    margin: 15px 0 5px; /* Adjust the spacing */
+    margin: 15px 0 5px;
     font-size: 14px;
     color: #333;
 }
@@ -41,7 +42,7 @@ input[type="number"] {
     display: block;
     width: 100%;
     padding: 12px;
-    margin: 10px 0 20px; /* Add bottom margin for spacing */
+    margin: 10px 0 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 14px;
@@ -63,7 +64,7 @@ button {
     color: #fff;
     border: none;
     padding: 15px;
-    margin: 10px 0; /* Adjust the margin */
+    margin: 10px 0;
     border-radius: 30px;
     font-size: 16px;
     cursor: pointer;
@@ -116,4 +117,31 @@ p {
     max-height: 200px; 
     overflow-y: auto;
     margin-top: 20px;
+}
+
+.custom-navbar {
+    background-color: #0056b3;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
 }
