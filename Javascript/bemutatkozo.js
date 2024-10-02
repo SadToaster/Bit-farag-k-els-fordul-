@@ -50,4 +50,56 @@ function startTime() {
     setTimeout(function() {startTime()}, 1000);
   }
 
+//inne gatya
+
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+
+var a=0;
+var images=[];
+
+
+images[1]= 
+images[2]= 'tajkep2.jpg'
+images[3]= 'tajkep3.jpg'
+images[4]= 'tajkep4.jpg'
+
+function diavetites(){
+    document.slide.src = images[a];
+    if (a===1){
+        document.createElement(images[a]);
+        codedocument.getElementById('dia').innerHTML = '<img src="../Images">'; 
+        a++;
+
+    }
+    else if(a===4){
+      document.createElement(images[1]);
+    };
+}
+
+
 
