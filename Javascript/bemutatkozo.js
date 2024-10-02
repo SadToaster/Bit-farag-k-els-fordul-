@@ -50,6 +50,8 @@ function startTime() {
     setTimeout(function() {startTime()}, 1000);
   }
 
+//inne gatya
+
   let slideIndex = 1;
   showSlides(slideIndex);
   
@@ -81,7 +83,7 @@ var a=0;
 var images=[];
 
 
-images[1]= 'tajkep1.jpg'
+images[1]= 
 images[2]= 'tajkep2.jpg'
 images[3]= 'tajkep3.jpg'
 images[4]= 'tajkep4.jpg'
@@ -89,11 +91,15 @@ images[4]= 'tajkep4.jpg'
 function diavetites(){
     document.slide.src = images[a];
     if (a===1){
-        document.write(images[a]);
+        document.createElement(images[a]);
+        codedocument.getElementById('dia').innerHTML = '<img src="../Images">'; 
         a++;
 
     }
     else if(a===4){
-        document.write(images[1]);
+      document.createElement(images[1]);
     };
 }
+
+
+
