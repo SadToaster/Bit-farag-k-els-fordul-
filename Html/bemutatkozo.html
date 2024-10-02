@@ -11,22 +11,12 @@
 <body onload="startTime()">
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html" target="_blank">Főmenü</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="./tankolas.html">Tankolás <span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="nav-link text-body" href="./index.html">Főmenü <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-body" href="./tankolas.html">Tankolás <span class="sr-only">(current)</span></a>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ml-auto">
           <p class="navbar-brand" id="demo"></p>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          
       </nav>
     </div>
     <div class="container">
@@ -70,36 +60,36 @@
     </div>
     
 
-    <p class="text-center">
+    <p class="text-center fs-1" id="bemutatas">
       Csapattagok bemutatása:
     </p>
 
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="card mx-4 my-3" >
-            <img src="..//Images/nadler_balazs_tanarur.webp" class="card-img-top" alt="Csapattag: Pók Patrik ">
+            <img src="..//Images/pok_patrik.jpg" class="card-img-top" alt="Csapattag: Pók Patrik ">
             <div class="card-body">
               <p class="card-text text-center">
-                Csapattag:<br>Pók Patrik <br> <button onclick="legordulobemutatkozo1()" id="myBtn1">Megtekint</button> <br><span id="more1">Szia Patrik vagyok!</span> <span id="dots1"> </span>
+                Csapattag:<br>Pók Patrik <br> <button onclick="legordulobemutatkozo1()" id="myBtn1">Megtekint</button> <br><span id="more1">Patrik vagyok, a Veszprém SZC Ipari Technikumba járok informatika szakra. Hobbim a testépítés és a videójátékok.</span> <span id="dots1"> </span>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="card mx-4 my-3" >
-            <img src="..//Images/nadler_balazs_tanarur.webp" class="card-img-top" alt="Csapattag: Rasch Vincent Richárd ">
+            <img src="..//Images/rasch_vincent_richard.jpg" class="card-img-top" alt="Csapattag: Rasch Vincent Richárd ">
             <div class="card-body">
-              <p class="card-text text-center">Csapattag:<br>Rasch Vincent Richárd <br> <button onclick="legordulobemutatkozo2()" id="myBtn2">Megtekint</button> <br><span id="more2" >Szia Patrik vagyok!</span><span id="dots2">  </span></p>
+              <p class="card-text text-center">Csapattag:<br>Rasch Vincent Richárd <br> <button onclick="legordulobemutatkozo2()" id="myBtn2">Megtekint</button> <br><span id="more2" >Vincent vagyok, a Veszprém SZC Ipari Technikumba járok informatika szakra. Hobbim a thai box és a barátokkal való interaktív szórakozás.</span><span id="dots2">  </span></p>
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-6 col-lg-4 mx-auto">
           <div class="card mx-4 my-3" >
-            <img src="..//Images/nadler_balazs_tanarur.webp" class="card-img-top" alt="Csapattag: Tunner Máté ">
+            <img src="..//Images/tunner_mate.jpg" class="card-img-top" alt="Csapattag: Tunner Máté ">
             <div class="card-body">
-              <p class="card-text text-center">Csapattag:<br>Tunner Máté <br> <button onclick="legordulobemutatkozo3()" id="myBtn3">Megtekint</button> <br><span id="more3" >Szia Patrik vagyok!</span><span id="dots3">   </span></p>
+              <p class="card-text text-center">Csapattag:<br>Tunner Máté <br> <button onclick="legordulobemutatkozo3()" id="myBtn3">Megtekint</button> <br><span id="more3" >Máté vagyok, a Veszprém SZC Ipari Technikumba járok informatika szakra. Hobbim az aktív sportolás és a olvasás.</span><span id="dots3">   </span></p>
             </div>
           </div>
         </div>
@@ -107,14 +97,7 @@
     </div>
     
 
-<!--innetől nem fix-->
-<button onclick="diavetites()">nyomj meg</button>
-<div class="slideshow">
-  <img id="slideshow-image" src="" alt="Slideshow Image">
-</div>
-<button id="next-button">Következő</button>
 
-<script src="script.js"></script>
 
 
 </body>
